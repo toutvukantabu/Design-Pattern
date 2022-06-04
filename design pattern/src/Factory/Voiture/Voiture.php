@@ -1,9 +1,10 @@
 <?php
 
-namespace Factory\Vehicule\Voiture;
+namespace Factory\Voiture;
 
-use Factory\Vehicule\Vehicule;
-use Factory\Vehicule\VehiculeInterface;
+use Factory\Vehicule;
+use Factory\VehiculeInterface;
+
 
 class Voiture extends Vehicule implements VehiculeInterface
 {
@@ -11,7 +12,7 @@ class Voiture extends Vehicule implements VehiculeInterface
     public function start(): void
     {
 
-        echo 'ma voiture avance';
+        echo "ma voiture avance";
     }
 
     public function stop(): void

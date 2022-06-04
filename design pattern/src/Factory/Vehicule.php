@@ -1,5 +1,5 @@
 <?php
-namespace Factory\Vehicule;
+namespace Factory;
 
 Abstract class Vehicule
 {

@@ -1,6 +1,7 @@
 <?php
 
-namespace Factory\Vehicule;
+namespace Factory;
+
 
 interface VehiculeInterface
 {

@@ -1,12 +1,14 @@
 <?php
 
-namespace Factory\Vehicule;
+namespace Factory;
+
+use Factory\Vehicule;
 
 class VehiculeFactory
 {
     public function createVehicule(string $models): Vehicule
     {
-        $className = "Factory\\Vehicule\\" . $models . "\\" . $models;
+        $className =  $models ;
         if (!class_exists($className)) throw new \Exception("la classe .'  $models ' . n\'existe pas");
 
         return new $className();
