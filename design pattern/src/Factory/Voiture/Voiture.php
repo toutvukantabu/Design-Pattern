@@ -2,22 +2,21 @@
 
 namespace Factory\Voiture;
 
-use Factory\Vehicule;
+use Factory\AbstractVehicule;
 use Factory\VehiculeInterface;
 
 
-class Voiture extends Vehicule implements VehiculeInterface
+class Voiture extends AbstractVehicule implements VehiculeInterface
 {
 
     public function start(): void
     {
-
-        echo "ma voiture avance";
+        echo "ma voiture de marque " . AbstractVehicule::getMarque() . " démarre" ;
     }
 
     public function stop(): void
     {
 
-        echo 'ma voiture s\'arrête';
+        echo "ma voiture de marque " . AbstractVehicule::getMarque() . " s'arrête";
     }
 }
