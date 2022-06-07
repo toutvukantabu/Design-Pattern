@@ -15,12 +15,14 @@ Intitulé du problème: ***Nous souhaitons pouvoir créér plusieurs véhicule a
 
 >***"Si l'on souhaite obliger les class enfants à appeler certaines méthodes contenues dans la classe abstraite il faudra penser à declarer les methodes dans Vehicule comme abstraite ex: abstract public function".***
 
-1- On créé une interface [*VehiculeInterface*](/design%20pattern/src/Factory/VehiculeInterface.php) c'est un contrat obligeant les class qui l'étendent d'implémenter de manière stricte les méthodes dont elle se compose. 
+1- On créé une interface [*VehiculeInterface*](/design%20pattern/src/Factory/VehiculeInterface.php) c'est un contrat obligeant les class qui l'implémentent de déclarer de manière stricte et obligatoire les méthodes dont elle se compose. 
 >***"on peut implémenter plusieurs interface mais n'étendre que d'une class***".
 
 2- En second on créé plusieurs class ***Voiture,Moto,hélicoptère*** implementant **VehiculInterface** et étendant d'**AbstractVehicule**
 
 3 En troisième on crée un [*VehiculeFactory*](/design%20pattern/src/Factory/VehiculeFactory.php) qui sera notre usine nous permettant de créer nos différents véhicules.
 
-4 le tout est montré en exemple dans [l'index.php]
+4 le tout est montré en exemple dans [ici](/design%20pattern/public/index.php).
+
+>***"Pour tester, aller avec le terminal dans le dossier ~/public du projet et taper : php index.php pour lancer le script "***
 
