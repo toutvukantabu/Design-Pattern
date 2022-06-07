@@ -22,7 +22,7 @@ Intitulé du problème: ***Nous souhaitons pouvoir créér plusieurs véhicule a
 
 3 En troisième on crée un [*VehiculeFactory*](/design%20pattern/src/Factory/VehiculeFactory.php) qui sera notre usine nous permettant de créer nos différents véhicules.
 
-4 le tout est montré en exemple dans [ici](/design%20pattern/public/index.php).
+4 l'avantage est qu'on ne fait appel qu'au VehiculeFactory et on peut enchainer la création de plusieurs objet de la même famille. Le tout est montré en exemple [ici](/design%20pattern/public/index.php).
 
 >***"Pour tester, aller avec le terminal dans le dossier ~/public du projet et taper : php index.php pour lancer le script "***
 
